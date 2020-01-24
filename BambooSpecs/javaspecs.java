@@ -28,15 +28,15 @@ public class PlanSpec {
     
     public Plan plan() {
         final Plan plan = new Plan(new Project()
-                .oid(new BambooOid("sm2vi4phkh2g"))
-                .key(new BambooKey("KEE"))
-                .name("Keerthi"),
+                .oid(new BambooOid(""))
+                .key(new BambooKey("SAM"))
+                .name("sample"),
             "conn",
             new BambooKey("CONN"))
-            .oid(new BambooOid("slt6ajc9qpgm"))
+            .oid(new BambooOid(""))
             .pluginConfigurations(new ConcurrentBuilds()
                     .useSystemWideDefault(false))
-            .stages(new Stage("Stage 1")
+           /* .stages(new Stage("Stage 1")
                     .jobs(new Job("Clone and install",
                             new BambooKey("CI"))
                             .artifacts(new Artifact()
@@ -71,9 +71,9 @@ public class PlanSpec {
             .forceStopHungBuilds();
         return plan;
     }
-    
+    */
     public PlanPermissions planPermission() {
-        final PlanPermissions planPermission = new PlanPermissions(new PlanIdentifier("KEE", "CONN"))
+        final PlanPermissions planPermission = new PlanPermissions(new PlanIdentifier("SAM", "CONN"))
             .permissions(new Permissions()
                     .userPermissions("rig", PermissionType.ADMIN, PermissionType.VIEW, PermissionType.CLONE, PermissionType.BUILD, PermissionType.EDIT)
                     .anonymousUserPermissionView());

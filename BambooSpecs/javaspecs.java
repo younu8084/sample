@@ -36,10 +36,10 @@ public class PlanSpec {
             .oid(new BambooOid(""))
             .pluginConfigurations(new ConcurrentBuilds()
                     .useSystemWideDefault(false))
-           /* .stages(new Stage("Stage 1")
+            .stages(new Stage("Stage 1")
                     .jobs(new Job("Clone and install",
                             new BambooKey("CI"))
-                            .artifacts(new Artifact()
+                          /*  .artifacts(new Artifact()
                                     .name("conn")
                                     .copyPattern("**")
                                     .shared(true))

@@ -29,10 +29,10 @@ public class PlanSpec {
     public Plan plan() {
         final Plan plan = new Plan(new Project()
                 .oid(new BambooOid(""))
-                .key(new BambooKey("SAM"))
-                .name("sample"),
-            "conn",
-            new BambooKey("CONN"))
+                .key(new BambooKey("ONE"))
+                .name("onlyone"),
+            "NEWW",
+            new BambooKey("newplan"))
             .oid(new BambooOid(""))
             .pluginConfigurations(new ConcurrentBuilds()
                     .useSystemWideDefault(false))
